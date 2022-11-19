@@ -1,9 +1,18 @@
-import Input from "./assets/components/Input";
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import Home from "./assets/pages/Home";
+import Testandorotas from './assets/pages/Testerotas';
 
 function App() {
   return (
     <>
-    <Input />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/testerotas" element={<Testandorotas />} />
+      </Routes>
+    </Router>
+    
+    
     </>
   ) 
   
