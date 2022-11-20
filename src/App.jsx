@@ -1,9 +1,9 @@
-import Input from "./components/Input";
+import MainRoutes from "./routes/mainRoutes";
 
 function App() {
   return (
     <>
-      <Input />
+      <MainRoutes />
     </>
   );
 }
