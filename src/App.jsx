@@ -1,9 +1,9 @@
-import MainRoutes from "./routes/mainRoutes";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <MainRoutes />
+      <Home />
     </>
   );
 }

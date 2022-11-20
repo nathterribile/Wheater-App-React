@@ -1,9 +1,12 @@
-import Input from "./components/Input";
+import CardWeather from "./../../components/CardWeather";
+import Input from "./../../components/Input";
 
-export default function Home() {
+function Home() {
   return (
     <>
       <Input />
+      <CardWeather />
     </>
   );
 }
+export default Home;
