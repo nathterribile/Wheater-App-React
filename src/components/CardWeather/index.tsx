@@ -6,16 +6,16 @@ import {
   TitleContainer,
   ImgTitleContainer,
   ContainerSpace,
-} from "./styled";
-import Compass from "../../assets/44.svg";
-import icon from "./../../assets/01d.svg";
-export default function CardWeather() {
+} from './styled';
+import Compass from '../../assets/44.svg';
+import icon from './../../assets/01d.svg';
+export default function CardWeather () {
   return (
     <>
       <Content>
         <TitleContainer>
           <ImgTitleContainer>
-            <img src={Compass} alt="Bússola" />
+            <img src={Compass} alt='Bússola' />
           </ImgTitleContainer>
 
           <div>
@@ -24,19 +24,19 @@ export default function CardWeather() {
           </div>
         </TitleContainer>
 
-        <ContainerWeatherData color="#00008B">
+        <ContainerWeatherData color='#00008B'>
           <ContentImgLeft>
-            <img src={icon} alt="clima"></img>
+            <img src={icon} alt='clima' />
           </ContentImgLeft>
           <ContentDetailsRight>
-            <ContainerSpace space="24px 0px">
+            <ContainerSpace>
               <p>Hoje</p>
               <p> 20°C </p>
             </ContainerSpace>
             <div>
               <p> Céu Limpo</p>
             </div>
-            <ContainerSpace space="24px 0px">
+            <ContainerSpace>
               <p>Vento: 40 - KM/H</p>
               <p>Umidade: %</p>
               <p>Pressão: hPA</p>
