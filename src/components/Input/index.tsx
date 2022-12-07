@@ -1,18 +1,19 @@
 import { Container } from './styles';
 
-// interface IInput {
-//   id: string;
-//   name: string;
-//   label: string;
-//   placeholder: string;
-// }
+interface IInput {
+  id: string;
+  name: string;
+  label?: string;
+  placeholder: string;
+  type: string;
+}
 
-export default function Input () {
+export default function Input ({id, name, label, placeholder, type} : IInput) {
   // { id, name, label, placeholder }
   return (
     <>
       <Container>
-      <input type='text' placeholder='digite tal coisa' />
+      <input id={id} name={name} type={type} placeholder={placeholder}  />
       </Container>
     </>
   );

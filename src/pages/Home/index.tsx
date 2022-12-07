@@ -4,7 +4,7 @@ import Input from '../../components/Input';
 function Home () {
   return (
     <>
-      <Input />
+      <Input id={''} name={''} placeholder={''} type={''} />
       <CardWeather />
     </>
   );
