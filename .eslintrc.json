@@ -6,8 +6,17 @@
     "standard-jsx",
     "standard-react"
   ],
+<<<<<<< HEAD
   "plugins": ["jsx-a11y"],
   "rules": {
+=======
+  "plugins": [
+    "jsx-a11y"
+  ],
+
+  "rules": {
+    "semi": 0,
+>>>>>>> c74ff36 (eslint)
     "comma-dangle": [
       "error",
       {
