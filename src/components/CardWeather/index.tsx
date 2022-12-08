@@ -1,14 +1,14 @@
+import Compass from '../../assets/44.svg'
+import icon from './../../assets/01d.svg'
 import {
+  ContainerSpace,
   ContainerWeatherData,
   Content,
-  ContentImgLeft,
   ContentDetailsRight,
-  TitleContainer,
+  ContentImgLeft,
   ImgTitleContainer,
-  ContainerSpace,
-} from './styled';
-import Compass from '../../assets/44.svg';
-import icon from './../../assets/01d.svg';
+  TitleContainer,
+} from './styled'
 export default function CardWeather () {
   return (
     <>
@@ -45,5 +45,5 @@ export default function CardWeather () {
         </ContainerWeatherData>
       </Content>
     </>
-  );
+  )
 }

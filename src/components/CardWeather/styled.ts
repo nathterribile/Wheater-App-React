@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 // import * as Color from 'Color';
 
 export const Content = styled.main`
@@ -26,7 +26,7 @@ export const Content = styled.main`
   @media (min-width: 2000px) {
     width: 30%;
   }
-`;
+`
 export const TitleContainer = styled.div`
   background-color: rgba(112, 112, 112, 0.8);
   width: 100%;
@@ -36,7 +36,7 @@ export const TitleContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   margin: 16px 0px;
-`;
+`
 export const ImgTitleContainer = styled.div`
   padding: 16px;
   width: 50px;
@@ -45,7 +45,7 @@ export const ImgTitleContainer = styled.div`
     width: 100%;
     height: 100%;
   }
-`;
+`
 export const ContainerWeatherData = styled.div`
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@ export const ContainerWeatherData = styled.div`
   @media (min-width: 600px) {
     flex-direction: row;
   }
-`;
+`
 export const ContentImgLeft = styled.div`
   display: flex;
   padding: 30px;
@@ -70,7 +70,7 @@ export const ContentImgLeft = styled.div`
     width: 100%;
     justify-content: center;
   }
-`;
+`
 export const ContentDetailsRight = styled.div`
   display: flex;
   width: 100%;
@@ -86,6 +86,6 @@ export const ContentDetailsRight = styled.div`
       font-size: 24px;
     }
   }
-`;
+`
 export const ContainerSpace = styled.div`
-`;
+`

@@ -1,10 +1,11 @@
-import Home from './pages/Home';
-import './app.css'
+import { RoutesMain as Routes } from './routes'
+import GlobalStyles from './styles/globalStyles'
 
 export function App () {
   return (
     <>
-      <Home />
+      <GlobalStyles />
+      <Routes />
     </>
   )
 }

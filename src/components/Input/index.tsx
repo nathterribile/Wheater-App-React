@@ -1,4 +1,4 @@
-import { Container } from './styles';
+import { Container } from './styles'
 
 interface IInput {
   id: string;
@@ -8,13 +8,13 @@ interface IInput {
   type: string;
 }
 
-export default function Input ({id, name, label, placeholder, type} : IInput) {
+export default function Input ({ id, name, label, placeholder, type } : IInput) {
   // { id, name, label, placeholder }
   return (
     <>
       <Container>
-      <input id={id} name={name} type={type} placeholder={placeholder}  />
+        <input id={id} name={name} type={type} placeholder={placeholder} />
       </Container>
     </>
-  );
+  )
 }

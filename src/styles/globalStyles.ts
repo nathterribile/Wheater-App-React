@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 :root {
@@ -8,6 +8,7 @@ export default createGlobalStyle`
   --color-background-cards: #EAE7EE;
   --color-border-input: #73ADC1;
   --color-background-input: #EAE7EE;
+  --color-background-button: #73ADC1;
 }
 
 * {
@@ -34,10 +35,13 @@ body {
 }
 
 body, input, button {
-  font-family: 'Monteserrat';
+  font-family: 'Montserrat', sans-serif;
 }
 
 button {
     cursor: pointer;
+    background-color: var(--color-background-button);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    color: var(--color-text);
   }
-`;
+`
