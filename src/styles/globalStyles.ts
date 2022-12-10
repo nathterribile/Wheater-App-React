@@ -17,14 +17,14 @@ export default createGlobalStyle`
   box-sizing: border-box;
 }
 
-border-style, html {
+body, html {
   width: 100vw;
   height: 100vh;
 }
 
 body {
   background: linear-gradient(
-    to right top, #fb99a5, #f59db3, 
+    to right, #fb99a5, #f59db3, 
     #eca2bf, #e2a7c8, #d8accf, #cdaed3, #c1b0d6, 
     #b6b2d6, #a4b1d5, #92b0d1, #81afcb, #73adc1
     );
@@ -34,14 +34,17 @@ body {
     overflow-y: overlay;
 }
 
-body, input, button {
+body, input, button, a {
   font-family: 'Montserrat', sans-serif;
 }
 
-button {
+button, a {
     cursor: pointer;
     background-color: var(--color-background-button);
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
     color: var(--color-text);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
   }
 `
