@@ -20,7 +20,7 @@ gap: 16px;
 h3 {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px !important;
   line-height: 20px;
 }
 

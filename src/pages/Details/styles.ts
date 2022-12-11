@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.main`
 @media (min-width:480px) {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 1080px;
+    margin: auto;
 }
 `
