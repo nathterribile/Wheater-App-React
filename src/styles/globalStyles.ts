@@ -20,6 +20,9 @@ export default createGlobalStyle`
 body, html {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -34,7 +37,7 @@ body {
     overflow-y: overlay;
 }
 
-body, input, button, a {
+body, input, button, a, h1 {
   font-family: 'Montserrat', sans-serif;
 }
 

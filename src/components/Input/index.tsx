@@ -6,6 +6,8 @@ interface IInput {
   label?: string;
   placeholder: string;
   type: string;
+  value: string;
+
 }
 
 export default function Input ({ id, name, label, placeholder, type } : IInput) {

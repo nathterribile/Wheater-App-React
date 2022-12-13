@@ -1,6 +1,10 @@
+import GlobalStyles from '@/styles/globalStyles'
 import { useState } from 'react'
 import CardWeather from '../../components/CardWeather'
 import Input from '../../components/Input'
+import aceno from '../../assets/aceno.svg'
+import search from '../../assets/search.svg'
+import { Container } from './styles'
 
 function Home () {
   const [city, setCity] = useState('')
@@ -21,30 +25,36 @@ function Home () {
   }
 
   return (
-    <>
+    <Container>
+      <GlobalStyles />
+      <h1>Olá <img src={aceno} alt='aceno' /></h1>
+      <p className='firstP'>Aqui você pode consultar o <br /> clima de qualquer cidade</p>
+      <p>Insira, abaixo, o nome da cidade e do país</p>
       <input value={city} type='' onChange={handleChange} />
-      <button onClick={handleSearch}>click</button>
-      {watherForecast ? (
-        <div>
-          <div> 
+      <button onClick={handleSearch}><img src={search} alt="" /></button>
+      {watherForecast
+        ? (
+          <div className='cardTemp'>
+            <div className='itemsTemp'>
 
-          <h4>
-            {watherForecast.location.name}
-          </h4>
-          <p>
-            {watherForecast.current.condition.text}
-          </p>
+              <h4 className='locationName'>
+                {watherForecast.location.name}
+              </h4>
+              <p className='locationTemp'>
+                {watherForecast.current.condition.text}
+              </p>
+            </div>
+            <div className='itemsTemp'>
+              <p>{watherForecast.current.temp_c}°C</p>
+            </div>
+            <div className='itemsTemp'>
+              <img src={watherForecast.current.condition.icon} alt='' />
+            </div>
           </div>
-          <div>
-            {watherForecast.current.temp_c}
-          </div>
-          <div>
-            <img src={watherForecast.current.condition.icon} alt="" />
-          </div>
-        </div>
-      ): null}
+          )
+        : null}
       {/* <CardWeather /> */}
-    </>
+    </Container>
   )
 }
-export default Home;
+export default Home
