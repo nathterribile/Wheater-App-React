@@ -1,13 +1,10 @@
 import GlobalStyles from '@/styles/globalStyles';
 import { useState, useContext } from 'react';
-import CardWeather from '../../components/CardWeather';
-import Input from '../../components/Input';
 import aceno from '../../assets/aceno.svg';
 import search from '../../assets/search.svg';
 import { Container } from './styles';
 import { CustomerContext } from '@/context/CustomerProviders';
 import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
 
 interface weatherForecastProps{
   current: {
@@ -44,7 +41,6 @@ function Home () {
       .then((data) => {
         setWeatherForecast(data);
         setCity('');
-        console.log(data);
       });
   };
   const handleDetails = () => {
@@ -63,10 +59,12 @@ function Home () {
         Aqui você pode consultar o <br /> clima de qualquer cidade
       </p>
       <p>Insira, abaixo, o nome da cidade e do país</p>
-      <input value={city} type='' onChange={handleChange} />
-      <button onClick={handleSearch}>
-        <img src={search} alt='' />
-      </button>
+      <div className='containerSearch'>
+        <input value={city} type='' onChange={handleChange} />
+        <button onClick={handleSearch}>
+          <img src={search} alt='' />
+        </button>
+      </div>
       {weatherForecast
         ? (
           <div className='cardTemp' onClick={handleDetails}>
