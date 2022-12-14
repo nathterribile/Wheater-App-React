@@ -40,10 +40,9 @@ A aplicação foi desenvolvida utilizando typescript e, apesar de aparentemente 
 - Consumo da versão gratuita da api de climas [Weather API](https://openweathermap.org/api).
 
 ## Tecnologias
-- [Axios](https://axios-http.com/ptbr/docs/intro)
 - [ESLint](https://eslint.org/)
-- [Moment](https://momentjs.com/)
 - [React](https://pt-br.reactjs.org/)
+- [React-Context](https://pt-br.reactjs.org/docs/context.html#gatsby-focus-wrapper)
 - [React Router](https://reactrouter.com/)
 - [React-toastify](https://fkhadra.github.io/react-toastify/introduction)
 - [Styled-components](https://www.styled-components.com/)
@@ -84,7 +83,7 @@ $ git clone https://github.com/ItsCamyx/projectWeather.git && cd projectWeather
 $ yarn
 
 # Executanto aplicação
-$ yarn dev
+$ yarn vite
 
 ```
 
