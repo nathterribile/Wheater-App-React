@@ -20,6 +20,7 @@ A aplicação foi desenvolvida utilizando typescript e, apesar de aparentemente 
 
 ## Planejamento
 - [Trello](https://trello.com/b/4L7HWPV3/grupo-5-mjv-school-react)
+- [Forms](https://docs.google.com/forms/d/e/1FAIpQLSeHMZ82PRSDQH9DMXr0TsTV8NcVQWCnVxKvDkZchl7oUQN_sg/viewform)
 ## Design
 
 - [Figma](https://www.figma.com/file/v6aE2gtr8JH4GKnfEtkCWi/Untitled?node-id=0%3A1&t=F8UhGbH5Hwkk7oKF-1)
