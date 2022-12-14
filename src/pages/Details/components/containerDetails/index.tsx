@@ -1,41 +1,41 @@
-import GridDetails from "../gridDetails";
-import Neve from "../../../../assets/images/neve.svg";
-import Chuva from "../../../../assets/images/chuva.svg";
-import Sol from "../../../../assets/images/ensolarado.svg";
-import Nublado from "../../../../assets/images/nublado.svg";
-import Trovejando from "../../../../assets/images/trovejando.svg";
-import Vento from "../../../../assets/images/ventando.svg";
+import GridDetails from '../gridDetails';
+import Neve from '../../../../assets/images/neve.svg';
+import Chuva from '../../../../assets/images/chuva.svg';
+import Sol from '../../../../assets/images/ensolarado.svg';
+import Nublado from '../../../../assets/images/nublado.svg';
+import Trovejando from '../../../../assets/images/trovejando.svg';
+import Vento from '../../../../assets/images/ventando.svg';
 import {
   Container,
   ContentTemperature,
   ContentWeather,
   ContentImage,
-} from "./styles";
-import { useContext } from "react";
-import { CustomerContext } from "@/context/CustomerProviders";
+} from './styles';
+import { useContext } from 'react';
+import { CustomerContext } from '@/context/CustomerProviders';
 
-export default function ContainerDetails() {
+export default function ContainerDetails () {
   const { location } = useContext(CustomerContext);
 
   const handleImage = () => {
-    if (location.current.condition.text.includes("neve")) {
+    if (location.current.condition.text.includes('neve')) {
       return Neve;
     } else if (
-      location.current.condition.text.toLowerCase().includes("chuva")
+      location.current.condition.text.toLowerCase().includes('chuva')
     ) {
       return Chuva;
-    } else if (location.current.condition.text.toLowerCase().includes("sol")) {
+    } else if (location.current.condition.text.toLowerCase().includes('sol')) {
       return Sol;
     } else if (
-      location.current.condition.text.toLowerCase().includes("nublado")
+      location.current.condition.text.toLowerCase().includes('nublado')
     ) {
       return Nublado;
     } else if (
-      location.current.condition.text.toLowerCase().includes("trovoadas")
+      location.current.condition.text.toLowerCase().includes('trovoadas')
     ) {
       return Trovejando;
     } else if (
-      location.current.condition.text.toLowerCase().includes("vento")
+      location.current.condition.text.toLowerCase().includes('vento')
     ) {
       return Vento;
     } else {
