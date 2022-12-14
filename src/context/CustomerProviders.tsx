@@ -1,8 +1,8 @@
-import { createContext, useState } from "react";
+import { createContext, useState } from 'react';
 
 export const CustomerContext = createContext({});
 
-export const CustomerProvider = ({ children }) => {
+export function CustomerProvider({ children }) {
   const [location, setLocation] = useState(null);
 
   return (
@@ -10,4 +10,4 @@ export const CustomerProvider = ({ children }) => {
       {children}
     </CustomerContext.Provider>
   ) as JSX.Element;
-};
+}

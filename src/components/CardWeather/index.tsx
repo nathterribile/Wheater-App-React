@@ -3,7 +3,7 @@ import icon from './../../assets/01d.svg'
 import { useState, useEffect } from 'react'
 import { api } from '../../services/api'
 import moment from 'moment'
-import { ContainerSpace, ContainerWeatherData, Content, ContentDetailsRight, ContentImgLeft, ImgTitleContainer,TitleContainer } from './styled'
+import { ContainerSpace, ContainerWeatherData, Content, ContentDetailsRight, ContentImgLeft, ImgTitleContainer, TitleContainer } from './styled'
 export default function CardWeather () {
   const [previsao, setPrevisao] = useState([])
   const [data, setData] = useState('')
@@ -19,7 +19,9 @@ export default function CardWeather () {
         lat: '51.5085',
         lang: 'pt_br',
         units: 'metric',
-        appid: 'edc7ecdd8e2ba0408a1c09af3d42884d' }}
+        appid: 'edc7ecdd8e2ba0408a1c09af3d42884d',
+      },
+    },
     ).then((response) => {
       console.log(response)
       setData(moment(Date(response.data.dt)).format('DD MM YYYY'))
@@ -30,7 +32,7 @@ export default function CardWeather () {
       setVento(response.data.wind.speed)
       setPressao(response.data.main.pressure)
     })
-  }) 
+  })
   return (
     <>
       <Content>
@@ -41,10 +43,10 @@ export default function CardWeather () {
 
           <div>
             <p>{previsao.map(item =>
-            <p key={item.description}>{item.description}</p>
-              )}
+              <p key={item.description}>{item.description}</p>,
+            )}
             </p>
-            <p>{nome}</p>            
+            <p>{nome}</p>
           </div>
         </TitleContainer>
 
