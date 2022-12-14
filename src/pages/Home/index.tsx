@@ -9,9 +9,23 @@ import { CustomerContext } from '@/context/CustomerProviders';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
+interface weatherForecastProps{
+  current: {
+    condition:{
+      text: string,
+      icon: string,
+    },
+    temp_c:number;
+  },
+
+  location:{
+    name:string,
+  }
+}
+
 function Home () {
   const [city, setCity] = useState('');
-  const [weatherForecast, setWeatherForecast] = useState(null);
+  const [weatherForecast, setWeatherForecast] = useState<weatherForecastProps>();
   const navigate = useNavigate();
   const { setLocation } = useContext(CustomerContext);
 
@@ -30,6 +44,7 @@ function Home () {
       .then((data) => {
         setWeatherForecast(data);
         setCity('');
+        console.log(data);
       });
   };
   const handleDetails = () => {

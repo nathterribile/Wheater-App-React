@@ -14,7 +14,7 @@ import {
 import { useContext } from 'react';
 import { CustomerContext } from '@/context/CustomerProviders';
 
-export default function ContainerDetails() {
+export default function ContainerDetails () {
   const { location } = useContext(CustomerContext);
 
   const handleImage = () => {
