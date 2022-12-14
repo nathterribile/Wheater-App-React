@@ -35,6 +35,7 @@ A aplicação foi desenvolvida utilizando typescript e, apesar de aparentemente 
 - Aplicação desenvolvida em [TypeScript](https://www.typescriptlang.org/)
 - Estilização utilizando css-in-js com [styled-components](https://www.styled-components.com/)
 - Responsividade
+- Uso de context
 - Sistema de rotas com [React Router](https://reactrouter.com/)
 - Consumo da versão gratuita da api de climas [Weather API](https://openweathermap.org/api).
 
