@@ -17,6 +17,7 @@ export function RoutesMain () {
         : (
           <Route path='/details' element={<NotFound />} />
           )}
+      <Route path='/*' element={<NotFound />} />
     </Routes>
   );
 }
