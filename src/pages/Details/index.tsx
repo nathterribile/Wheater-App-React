@@ -2,7 +2,6 @@ import ContainerDetails from './components/containerDetails';
 import { Container } from './styles';
 import { useContext } from 'react';
 import { CustomerContext } from '@/context/CustomerProviders';
-// import { FaArrowLeft } from 'react-icons/fa'
 
 export default function Details () {
   const { location } = useContext(CustomerContext);

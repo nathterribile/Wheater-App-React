@@ -10,8 +10,4 @@ export const Container = styled.main`
     max-width: 1080px;
     margin: auto;
 }
-/* h1 {
-    display: flex;
-    border: 1px solid red;
-} */
 `
